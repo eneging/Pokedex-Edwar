@@ -2,9 +2,9 @@ import "./Card.css";
 
 function Card({ data }) {
   return (
-    <section>
-      <div>
-        <img src={data.sprites?.other.home.front_default} alt={data.name} />
+    <section >
+      <div className="card">
+        <img  className="card-img-top" src={data.sprites?.other.home.front_default} alt={data.name} />
       </div>
       <table>
         <thead>
