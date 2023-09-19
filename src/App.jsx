@@ -7,15 +7,21 @@ function App() {
   const { data, filtered, handleClick, handleSubmit, handleOnChange } = usePokemon();
 
   return (
+    <>
+    <nav className="navbar navbar-light bg-light">#My Pokedex</nav>
+    
     <main>
+      <div>
       <Nav
         fnSubmit={handleSubmit}
         fnClick={handleClick}
         fnOnChange={handleOnChange}
         dataOptions={filtered}
       />
-      {data && <Card data={data} />}
+      {data && <Card data={data} />}</div>
     </main>
+
+    </>
   );
 }
 

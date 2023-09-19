@@ -3,9 +3,23 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 1.2rem;
-  font-family: sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 main {
   min-height: 100vh;
+display: flex;
+
+gap:3rem
+}
+
+main > div {
+
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  border: solid rgb(52, 50, 50) 1rem;
 }

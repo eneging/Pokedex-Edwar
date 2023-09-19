@@ -2,18 +2,18 @@ import "./Nav.css";
 
 function Nav({ fnSubmit, fnClick, fnOnChange, dataOptions }) {
   return (
-    <nav>
+    <nav className="nav-ctn">
       <form onSubmit={fnSubmit}>
         <label htmlFor="name">
           Escribe el nombre específico de un pokemon:
         </label>
-        <input type="text" />
+        <input type="text"  placeholder="----------Busca un pokemon---------------"/>
         <button type="submit">Buscar</button>
       </form>
-      <div>
+      <div className="ctn-input">
         <label>Filtra según escribes:</label>
         <div id="options">
-          <input type="text" onChange={fnOnChange} />
+          <input type="text" placeholder="-----------busca tu pokemon-------" onChange={fnOnChange} />
           <ul>
             {dataOptions?.map((pokemon, i) => (
               <li key={i}>
@@ -35,6 +35,7 @@ function Nav({ fnSubmit, fnClick, fnOnChange, dataOptions }) {
           </button>
         </div>
       </div>
+     <div className="ctn-img"></div>
     </nav>
   );
 }
